@@ -13,7 +13,7 @@ exports.register = (req,res) => {
   console.log(req.body);
   
   const  { name, email, password , passwordConfirm } = req.body;
-
+  const regex_paswd = /^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{7,25}$/;
   db.query('SELECT email FROM users WHERE email = ?',[email], async(error, results) =>{
       if(error){
           console.log(error);
@@ -28,8 +28,13 @@ exports.register = (req,res) => {
         return res.render('register',{
             message: "Passwords do not match !"
         })
+        
       }
-
+      if(!(regex_paswd.test(password))){
+        return res.render('register',{
+            message: " Wrong password format ",
+          })
+      }
       let hashedPassword = await bcrypt.hash(password, 8);
       console.log(hashedPassword);
 
