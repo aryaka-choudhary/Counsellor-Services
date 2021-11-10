@@ -84,3 +84,34 @@ tr:hover {
 .tag{
     color:#0C49C0;
 }
+@media screen and (max-width: 426px) {
+
+    .container {
+        text-align: center;
+      }
+    
+      .container-nav {
+        flex-direction: column;
+      }
+    
+      nav ul {
+        flex-direction: column;
+      }
+    
+      nav li {
+        margin: 0.3em 0;
+      }
+
+      .text-block {
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+        background-color:#9E64CE;
+        color: #F2DC27;
+        padding-left: 0.5px;
+        padding-right: 0.5px;
+        font-size: 10px;
+      }
+  }
+
+    
