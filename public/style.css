@@ -1,5 +1,5 @@
 nav {
-    background-color: #9E64CE;
+    background-color:#DB5461;
     color: white;
     padding: 30px 60px;
     display: flex;
@@ -14,9 +14,12 @@ nav ul{
 
 nav li{
     list-style: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 body{
-    background-color: #F7F4FC ;
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-image: url("https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/v546batch3-mynt-34-badgewatercolor_1.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=89288ef4b47127f7f34a5998b50e4470") ;
 }
 
 nav li a{
@@ -27,8 +30,8 @@ nav li a{
 }
 
 nav li a:hover{
-    color: yellow;
-    text-decoration: none;
+    color: #3D5467;
+    text-decoration:underline;
 }
 
 #id1{
@@ -52,6 +55,12 @@ nav li a:hover{
     text-align: center;
     padding : 400px 720px;
 }
+#id6{
+    color:red;
+}
+/* #id7{
+    padding: 60px 120px px 140px;
+} */
 .responsive{
     width: 100%;
     height: auto;
@@ -84,3 +93,29 @@ tr:hover {
 .tag{
     color:#0C49C0;
 }
+.br {
+    padding: 1.3em 3em;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color:lightblue;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+   }
+   
+.br:hover {
+    background-color: #2EE59D ;
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+   }
+   
+.br:active {
+    transform: translateY(-1px);
+   }
