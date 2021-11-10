@@ -1,5 +1,5 @@
 nav {
-    background-color: #9E64CE;
+    background-color:#DB5461;
     color: white;
     padding: 30px 60px;
     display: flex;
@@ -14,9 +14,12 @@ nav ul{
 
 nav li{
     list-style: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 body{
-    background-color: #F7F4FC ;
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-image: url("https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/v546batch3-mynt-34-badgewatercolor_1.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=89288ef4b47127f7f34a5998b50e4470") ;
 }
 
 nav li a{
@@ -27,8 +30,8 @@ nav li a{
 }
 
 nav li a:hover{
-    color: yellow;
-    text-decoration: none;
+    color: #3D5467;
+    text-decoration:underline;
 }
 
 #id1{
