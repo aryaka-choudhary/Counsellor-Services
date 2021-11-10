@@ -1,0 +1,2 @@
+CREATE DEFINER=`root`@`localhost` EVENT `reassign_availability` ON SCHEDULE EVERY 24 HOUR STARTS '2021-11-10 23:59:59' ON COMPLETION NOT PRESERVE ENABLE DO UPDATE slots
+SET is_booked = 'Available'
