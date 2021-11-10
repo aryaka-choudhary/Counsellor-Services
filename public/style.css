@@ -36,7 +36,7 @@ nav li a:hover{
 
 #id1{
     text-align: center ;
-    color:#F2B112;
+    color:black;
 }
 #id2{
     text-align: center;
@@ -51,7 +51,7 @@ nav li a:hover{
 }
 #id5{
     text-decoration: none;
-    color: #9E64CE;
+    color: #DB5461;
     text-align: center;
     padding : 400px 720px;
 }
@@ -70,11 +70,12 @@ nav li a:hover{
   font-family: Arial;
 }
 .text-block {
+    border-radius: 15px;
   position: absolute;
   bottom: 20px;
   right: 20px;
-  background-color:#9E64CE;
-  color: #F2DC27;
+  background-color:#DB5461;
+  color: white;
   padding-left: 20px;
   padding-right: 20px;
 }
@@ -93,6 +94,32 @@ tr:hover {
 .tag{
     color:#0C49C0;
 }
+@media screen and (max-width: 426px) {
+
+    .container {
+        text-align: center;
+      }
+    
+      .container-nav {
+        flex-direction: column;
+      }
+    
+      nav ul {
+        flex-direction: column;
+      }
+    
+      nav li {
+        margin: 0.3em 0;
+      }
+
+      .text-block {
+
+        padding-left: 0.5px;
+        padding-right: 0.5px;
+        font-size: 10px;
+      }
+  }
+
 .br {
     padding: 1.3em 3em;
     font-size: 12px;
@@ -108,14 +135,16 @@ tr:hover {
     cursor: pointer;
     outline: none;
    }
-   
+
 .br:hover {
-    background-color: #2EE59D ;
-    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    background-color: #DB5461 ;
+    box-shadow: 0px 15px 20px rgba(249, 114, 114, 0.687);
     color: #fff;
     transform: translateY(-7px);
    }
-   
+
 .br:active {
     transform: translateY(-1px);
-   }
+   } 
+
+    

@@ -9,16 +9,19 @@
     <title>Counsellor Details</title>
 </head>
 <body>
-  <nav>
-    <h4>Counselling Services</h4>
-    <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/login">Login</a></li>
-        <li><a href="/register">Register</a></li>
-    </ul>
-</nav>
+  <div class="container container-nav">
+    <nav>
+        <h4 font="Georgia">Counselling Services</h4>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/login">Login</a></li>
+            <li><a href="/register">Register</a></li>
+        </ul>
+    </nav>
+</div>
     <h1 id="id1">Counsellor Details</h1>
     <h3 id="id2">Welcome <%= em%></h3>
+    <div class="container">
     <table class="table table-striped table-primary">
         <thead>
           <tr>
@@ -41,6 +44,7 @@
             <% } %>
         </tbody>
       </table>
+      </div>
       <!-- <script>
         records.forEach(function(row){
         var x = "/getSlots/:"+row.id;
